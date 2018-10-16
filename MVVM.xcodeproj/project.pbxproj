@@ -15,6 +15,10 @@
 		8DEA1FB62175C58F001221D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA1FB42175C58F001221D7 /* LaunchScreen.storyboard */; };
 		8DEA1FC12175C591001221D7 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA1FC02175C591001221D7 /* MVVMTests.swift */; };
 		8DEA1FCC2175C591001221D7 /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA1FCB2175C591001221D7 /* MVVMUITests.swift */; };
+		8DEA1FDE2175D21B001221D7 /* personDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA1FDD2175D21B001221D7 /* personDetailCell.swift */; };
+		8DEA1FE22175EAED001221D7 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA1FE12175EAED001221D7 /* PersonViewModel.swift */; };
+		8DEA1FE42175EB36001221D7 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA1FE32175EB36001221D7 /* PersonModel.swift */; };
+		8DEA1FE62175EC58001221D7 /* Info.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DEA1FE52175EC57001221D7 /* Info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8DEA1FC72175C591001221D7 /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEA1FCB2175C591001221D7 /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		8DEA1FCD2175C591001221D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DEA1FDD2175D21B001221D7 /* personDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personDetailCell.swift; sourceTree = "<group>"; };
+		8DEA1FE12175EAED001221D7 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		8DEA1FE32175EB36001221D7 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		8DEA1FE52175EC57001221D7 /* Info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +107,13 @@
 		8DEA1FA72175C564001221D7 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				8DEA1FDC2175D1E4001221D7 /* View Controller */,
+				8DEA1FDB2175C670001221D7 /* View */,
+				8DEA1FDA2175C64D001221D7 /* View Model */,
+				8DEA1FD92175C60D001221D7 /* Model */,
 				8DEA1FA82175C564001221D7 /* AppDelegate.swift */,
-				8DEA1FAA2175C565001221D7 /* ViewController.swift */,
-				8DEA1FAC2175C565001221D7 /* Main.storyboard */,
+				8DEA1FE52175EC57001221D7 /* Info.json */,
 				8DEA1FB22175C58F001221D7 /* Assets.xcassets */,
-				8DEA1FB42175C58F001221D7 /* LaunchScreen.storyboard */,
 				8DEA1FB72175C590001221D7 /* Info.plist */,
 				8DEA1FAF2175C566001221D7 /* MVVM.xcdatamodeld */,
 			);
@@ -126,6 +136,49 @@
 				8DEA1FCD2175C591001221D7 /* Info.plist */,
 			);
 			path = MVVMUITests;
+			sourceTree = "<group>";
+		};
+		8DEA1FD92175C60D001221D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA1FE32175EB36001221D7 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DEA1FDA2175C64D001221D7 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA1FE12175EAED001221D7 /* PersonViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8DEA1FDB2175C670001221D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA1FB42175C58F001221D7 /* LaunchScreen.storyboard */,
+				8DEA1FAC2175C565001221D7 /* Main.storyboard */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8DEA1FDC2175D1E4001221D7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA1FE72175F145001221D7 /* TableViewCell */,
+				8DEA1FAA2175C565001221D7 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		8DEA1FE72175F145001221D7 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA1FDD2175D21B001221D7 /* personDetailCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEA1FB62175C58F001221D7 /* LaunchScreen.storyboard in Resources */,
+				8DEA1FE62175EC58001221D7 /* Info.json in Resources */,
 				8DEA1FB32175C58F001221D7 /* Assets.xcassets in Resources */,
 				8DEA1FAE2175C565001221D7 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEA1FE42175EB36001221D7 /* PersonModel.swift in Sources */,
 				8DEA1FAB2175C565001221D7 /* ViewController.swift in Sources */,
+				8DEA1FE22175EAED001221D7 /* PersonViewModel.swift in Sources */,
 				8DEA1FA92175C564001221D7 /* AppDelegate.swift in Sources */,
 				8DEA1FB12175C566001221D7 /* MVVM.xcdatamodeld in Sources */,
+				8DEA1FDE2175D21B001221D7 /* personDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,16 +493,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,16 +513,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

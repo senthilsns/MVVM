@@ -8,6 +8,13 @@
 
 import UIKit
 
-class PersonModel: NSObject {
+class personModel: Codable {
+    
+    var name : String?
+    var company : String?
 
+    enum CodingKeys: String, CodingKey {
+        case name
+        case company
+    }
 }
