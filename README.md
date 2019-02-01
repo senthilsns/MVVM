@@ -9,9 +9,13 @@ development of the graphical user interface – be it via a markup language
 or GUI code – from development of the business logic or back-end logic (the data model).
 
 Advantages: 
+
 1.Maintainability 
+
 2.Better Separation of Concerns 
+
 3.Improved Testability 
+
 4.Transparent Communication
 
 Disadvantages:
